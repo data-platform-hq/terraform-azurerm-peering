@@ -27,9 +27,8 @@ module "vpc_dst" {
 }
 
 module "peering" {
-  source = "../../modules/peering"
-
-  for_each = var.connected_envs
+  source  = "data-platform-hq/peering/azurerm"
+  version = "1.0.0"
 
   src_peering_name             = module.vpc_dst.name
   src_resource_group_name      = "test_group"
