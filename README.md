@@ -6,7 +6,6 @@ This module is provisioning peering between two virtual networks. Below is an ex
 ```
 module "vpc_src" {
   source  = "data-platform-hq/network/azurerm"
-  version = "1.2.0"
 
   project        = "my_project"
   env            = "test"
@@ -17,7 +16,6 @@ module "vpc_src" {
 
 module "vpc_dst" {
   source  = "data-platform-hq/network/azurerm"
-  version = "1.2.0"
 
   project        = "my_project"
   env            = "dev"
@@ -28,7 +26,6 @@ module "vpc_dst" {
 
 module "peering" {
   source  = "data-platform-hq/peering/azurerm"
-  version = "1.0.0"
 
   src_peering_name             = module.vpc_dst.name
   src_resource_group_name      = "test_group"
@@ -38,7 +35,7 @@ module "peering" {
   dst_peering_name             = module.vpc_scr.name
   dst_resource_group_name      = "dev_group"
   dst_virtual_network_name     = module.vpc_dst.name
-  dst_virtual_network_id       = module.vpc_dst.name
+  dst_virtual_network_id       = module.vpc_dst.id
 
   allow_virtual_network_access = true
   allow_forwarded_traffic      = true
