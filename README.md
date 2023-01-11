@@ -100,4 +100,4 @@ No modules.
 
 ## License
 
-Apache 2 Licensed. For more information please see [LICENSE](https://github.com/data-platform-hq/terraform-azurerm-mssql-database/blob/main/LICENSE)
+Apache 2 Licensed. For more information please see [LICENSE](https://github.com/data-platform-hq/terraform-azurerm-peering/blob/main/LICENSE)
