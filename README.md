@@ -3,7 +3,7 @@ Terraform module for peering establishment between two virtual networks
 
 ## Usage
 This module is provisioning peering between two virtual networks. Below is an example that provisions two virtual networks and peering between them.
-```
+```hcl
 module "vpc_src" {
   source  = "data-platform-hq/network/azurerm"
 
