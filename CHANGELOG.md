@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/data-platform-hq/terraform-azurerm-peering/compare/v1.1.0...v1.2.0) (2026-02-02)
+
+
+### Features
+
+* upgrade provider to AzureRM v4.0 ([e00f102](https://github.com/data-platform-hq/terraform-azurerm-peering/commit/e00f1021084465c59ae87a3ea033c9d1c46d411d))
+
 # [1.1.0](https://github.com/data-platform-hq/terraform-azurerm-peering/compare/v1.0.0...v1.1.0) (2024-09-10)
 
 
